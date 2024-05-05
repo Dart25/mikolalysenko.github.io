@@ -76,6 +76,12 @@ function GreedyMesh(volume, dims) {
             , [x[0]+du[0]+dv[0], x[1]+du[1]+dv[1], x[2]+du[2]+dv[2]]
             , [x[0]      +dv[0], x[1]      +dv[1], x[2]      +dv[2]]
           ]);
+          console.log([
+              [x[0],             x[1],             x[2]            ]
+            , [x[0]+du[0],       x[1]+du[1],       x[2]+du[2]      ]
+            , [x[0]+du[0]+dv[0], x[1]+du[1]+dv[1], x[2]+du[2]+dv[2]]
+            , [x[0]      +dv[0], x[1]      +dv[1], x[2]      +dv[2]]
+          ]);
           //Zero-out mask
           for(l=0; l<h; ++l)
           for(k=0; k<w; ++k) {
